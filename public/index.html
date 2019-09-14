@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>3D Piano Player (Three.js)</title>
+        <script src="js/three.js"></script>
+
+        <script src="js/OrbitAndPanControls.js"></script>
+        <script src="js/ColladaLoader.js"></script>
+
+        <!-- extras -->
+        <script src="js/base64binary.js" type="text/javascript"></script>
+
+        <script src="js/MIDI/AudioDetect.js" type="text/javascript"></script>
+        <script src="js/MIDI/LoadPlugin.js" type="text/javascript"></script>
+        <script src="js/MIDI/Plugin.js" type="text/javascript"></script>
+        <script src="js/MIDI/Player.js" type="text/javascript"></script>
+        <script src="js/MIDI/Loader.js" type="text/javascript"></script>
+
+        <script src="js/Window/DOMLoader.script.js" type="text/javascript"></script>
+
+        <!-- jasmid package -->
+        <script src="js/jasmid/stream.js"></script>
+        <script src="js/jasmid/midifile.js"></script>
+        <script src="js/jasmid/replayer.js"></script>
+
+        <script type="text/javascript" src="js/dat.gui.js"></script>
+
+        <!-- public/index.html -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style/main.css">
+    </head>
+    <body>        
+        <script src="js/main.js" type="text/javascript"></script>
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            _uacct = "UA-302418-4";
+            urchinTracker();
+        </script>
+
+        <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+
+        <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-302418-4");
+              pageTracker._trackPageview();
+            } catch(err) {}
+        </script>
+
+        <div id="info">
+            <a href="http://threejs.org" target="_blank">three.js</a> - 3D Piano player demo<br />
+            Controls: Keyboard to play, Mouse to orbit<br/>
+            Uses <a href="http://mudcu.be/midi-js/" target="_blank">MIDI.js</a><br/> 
+            Source code available on <a href="https://github.com/reality3d/3d-piano-player" target="_blank">Github</a><br/>
+            <a href="http://www.twitter.com/reality3d/" target="_blank">Borja Morales</a>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.rgba.org/r3d/3d-piano-player/" data-via="reality3d">Tweet</a>
+        </div>
+
+        <script>
+            /* the '!' before the function is to make it run immediately. If it wasn't there, a
+            syntax error would be thrown because the function would be seen as a declaration */
+            !function(d, s, id) { 
+                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http':'https';
+                if(!d.getElementById(id)){ 
+                    js = d.createElement(s);
+                    js.id = id; 
+                    js.src = p + '://platform.twitter.com/widgets.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, 'script', 'twitter-wjs');
+        </script>	
+    </body>
+</html>
