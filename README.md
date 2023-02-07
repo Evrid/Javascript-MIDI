@@ -21,3 +21,12 @@ To deploy it we use:
 npm run build
 
 and upload the build folder to netlify.com
+
+
+To be investigated:
+
+Controlling Arduino with Javascript Using the Johnny Five Library
+
+https://www.youtube.com/watch?v=6CmIidOxc2g
+
+
